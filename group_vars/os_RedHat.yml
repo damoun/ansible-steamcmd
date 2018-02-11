@@ -1,0 +1,7 @@
+---
+os_steamcmd_manual: True
+steamcmd_lib_path: /usr/local/lib/games/steam
+steamcmd_bin_path: /usr/local/games
+steamcmd_packages:
+  - glibc.i686
+  - libstdc++.i686
