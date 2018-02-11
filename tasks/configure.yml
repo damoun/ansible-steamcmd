@@ -1,0 +1,5 @@
+---
+
+- name: add steam user
+  user:
+    name: "{{ steamcmd_user }}"
