@@ -1,10 +1,9 @@
 ---
-
 os_steamcmd_manual: False
 steamcmd_lib_path: /usr/local/lib/games/steam
 steamcmd_bin_path: /usr/local/games
 steamcmd_package: steamcmd
-deb_mirror: https://deb.debian.org/debian/
-repositories: contrib non-free
+deb_mirror: http://archive.ubuntu.com/ubuntu/
+repositories: multiverse
 steamcmd_packages:
   - lib32gcc1

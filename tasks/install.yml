@@ -2,7 +2,7 @@
 
 - name: enable non-free Debian repository
   apt_repository:
-    repo: deb https://deb.debian.org/debian/ {{ ansible_distribution_release }} contrib non-free
+    repo: deb {{ deb_mirror }} {{ ansible_distribution_release }} {{ repositories }}
     state: present
   when:
     - ansible_os_family == "Debian"
