@@ -1,0 +1,7 @@
+---
+
+- fail:
+    msg: "Sorry, package steamcmd is only available for Debian"
+  when:
+    - ansible_os_family != "Debian"
+    - not steamcmd_manual

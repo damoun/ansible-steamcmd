@@ -1,0 +1,12 @@
+---
+
+- include_vars: '{{ item }}'
+  with_first_found:
+    - 'group_vars/os_{{ ansible_os_family }}.yml'
+    - 'group_vars/os_{{ ansible_os_family }}-{{ ansible_userspace_bits }}.yml'
+    - 'group_vars/os_{{ ansible_distribution }}.yml'
+    - 'group_vars/os_{{ ansible_distribution }}-{{ ansible_userspace_bits }}.yml'
+
+- set_fact:
+  steamcmd_manual: "{{ os_steamcmd_manual }}"
+  when: steamcmd_manual is undefined

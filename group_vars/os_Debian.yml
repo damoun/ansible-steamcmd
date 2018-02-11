@@ -1,0 +1,7 @@
+---
+os_steamcmd_manual: False
+steamcmd_lib_path: /usr/local/lib/games/steam
+steamcmd_bin_path: /usr/local/games
+steamcmd_package: steamcmd
+steamcmd_packages:
+  - lib32gcc1
