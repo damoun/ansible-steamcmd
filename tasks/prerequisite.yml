@@ -8,5 +8,5 @@
     - 'group_vars/os_{{ ansible_os_family }}.yml'
 
 - set_fact:
-  steamcmd_manual: "{{ os_steamcmd_manual }}"
+    steamcmd_manual: "{{ os_steamcmd_manual }}"
   when: steamcmd_manual is undefined
